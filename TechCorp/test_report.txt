@@ -1,0 +1,5 @@
+payroll_refactor.js:41 --- KẾT QUẢ TÍNH LƯƠNG HỆ THỐNG MỚI ---
+payroll_refactor.js:45 Nhân viên A (10tr, hệ số 1.0) -> Thực nhận: 10.000.000 VNĐ
+payroll_refactor.js:49 Nhân viên B (20tr, hệ số 1.5) -> Thực nhận: 27.000.000 VNĐ
+payroll_refactor.js:53 Nhân viên C (7.5tr, hệ số 1.2) -> Thực nhận: 9.000.000 VNĐ
+index.html:31 Live reload enabled.
