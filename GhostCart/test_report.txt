@@ -1,0 +1,14 @@
+cart_rescue.js:46 --- KỊCH BẢN 1: CHẠY HÀM CŨ (BỊ LỖI) ---
+cart_rescue.js:49 1. Giỏ hàng gốc BAN ĐẦU:    {"userId":"U123","totalPrice":1500,"items":["Laptop","Chuột không dây"],"metadata":{"isLocked":false}}
+cart_rescue.js:52 2. Giỏ xem trước trả về:   {"userId":"U123","totalPrice":1300,"items":["Laptop","Chuột không dây","Bàn di chuột"],"metadata":{"isLocked":true}}
+cart_rescue.js:53 3. Giỏ hàng gốc SAU ĐÓ:     {"userId":"U123","totalPrice":1300,"items":["Laptop","Chuột không dây","Bàn di chuột"],"metadata":{"isLocked":true}}
+cart_rescue.js:54 => KẾT LUẬN: Giỏ gốc bị SỬA SAI mất tiêu (Trừ tiền, thêm quà dù chưa mua)!
+cart_rescue.js:57 
+------------------------------------------------------------------
+
+cart_rescue.js:60 --- KỊCH BẢN 2: CHẠY HÀM MỚI (ĐÃ SỬA) ---
+cart_rescue.js:63 1. Giỏ hàng gốc BAN ĐẦU:    {"userId":"U123","totalPrice":1500,"items":["Laptop","Chuột không dây"],"metadata":{"isLocked":false}}
+cart_rescue.js:66 2. Giỏ xem trước trả về:   {"userId":"U123","totalPrice":1300,"items":["Laptop","Chuột không dây","Bàn di chuột"],"metadata":{"isLocked":true}}
+cart_rescue.js:67 3. Giỏ hàng gốc SAU ĐÓ:     {"userId":"U123","totalPrice":1500,"items":["Laptop","Chuột không dây"],"metadata":{"isLocked":false}}
+cart_rescue.js:68 => KẾT LUẬN: Giỏ gốc AN TOÀN tuyệt đối, không hề bị thay đổi dữ liệu!
+index.html:31 Live reload enabled.

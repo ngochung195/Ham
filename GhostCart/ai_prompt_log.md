@@ -1,0 +1,1 @@
+Prompt 1: Đưa ra trường hợp kiểm tra so sánh giữa code  mới và cũ
