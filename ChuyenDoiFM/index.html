@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+
+<body>
+
+    <h2>Chuyển đổi từ feet sang meters</h2>
+    <label for="numberFoot">Nhập một số:</label>
+    <input type="number" id="numberFoot" placeholder="Nhập số cần đổi...">
+    <button onclick="footToMeter()">Chuyển đổi</button>
+
+    <p><strong>Kết quả:</strong> <span id="metersResult">Chưa có dữ liệu</span></p>
+
+    <hr>
+
+    <h2>Chuyển đổi từ meters sang feet</h2>
+    <label for="numberMeters">Nhập một số:</label>
+    <input type="number" id="numberMeters" placeholder="Nhập số cần đổi...">
+    <button onclick="meterToFoot()">Chuyển đổi</button>
+
+    <p><strong>Kết quả:</strong> <span id="feetResult">Chưa có dữ liệu</span></p>
+
+    <script>
+        let foot = document.getElementById('numberFoot');
+        let meters = document.getElementById('numberMeters');
+        let metersResult = document.getElementById('metersResult');
+        let feetResult = document.getElementById('feetResult');
+
+        function footToMeter() {
+            let num = Number(foot.value);
+            let result = num * 0.305;
+
+            metersResult.innerText = result + " meters";
+        }
+
+        function meterToFoot() {
+            let num = Number(meters.value);
+            let result = num * 3.279;
+
+            feetResult.innerText = result + " feet";
+        }
+    </script>
+
+</body>
+
+</html>
