@@ -1,0 +1,18 @@
+<body>
+    <script>
+        let input = prompt('Nhập mảng số nguyên (các số cách nhau bằng dấu phẩy):');
+
+        function daoNguocMang(arr) {
+            return arr.reverse();
+        }
+
+        let mangBanDau = input.split(',').map(Number);
+
+        console.log("Mảng ban đầu:", mangBanDau);
+
+        let mangDaoNguoc = daoNguocMang(mangBanDau);
+
+        console.log("Mảng sau khi đảo ngược:", mangDaoNguoc);
+        alert("Mảng sau khi đảo ngược: " + mangDaoNguoc.join(', '));
+    </script>
+</body>

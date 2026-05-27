@@ -1,0 +1,17 @@
+<body>
+    <script>
+        let a = Number(prompt('Nhập số nguyên a:'));
+        let b = Number(prompt('Nhập số nguyên b:'));
+
+        console.log(`Trước khi đổi chỗ: a = ${a}, b = ${b}`);
+
+        function doiCho(x, y) {
+            return [y, x];
+        }
+
+        [a, b] = doiCho(a, b);
+
+        console.log(`Sau khi đổi chỗ: a = ${a}, b = ${b}`);
+        alert(`Kết quả sau khi đổi chỗ:\na = ${a}\nb = ${b}`);
+    </script>
+</body>

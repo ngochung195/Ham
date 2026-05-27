@@ -1,0 +1,18 @@
+<body>
+    <script>
+        let input = prompt('Nhập một số để kiểm tra:');
+
+        function laSoNguyenDuong(value) {
+            if (value === null || value.trim() === "") {
+                return false;
+            }
+
+            let num = Number(value);
+            return Number.isInteger(num) && num > 0;
+        }
+
+        console.log(laSoNguyenDuong(input));
+
+        alert('Kết quả: ' + laSoNguyenDuong(input));
+    </script>
+</body>

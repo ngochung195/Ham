@@ -1,0 +1,23 @@
+<body>
+
+    <h2>Tính bình phương</h2>
+    <label for="numberInput">Nhập một số:</label>
+    <input type="number" id="numberInput" placeholder="Nhập số...">
+    <button onclick="binhPhuong()">Tính</button>
+
+    <p><strong>Kết quả:</strong> <span id="result">Chưa có dữ liệu</span></p>
+
+    <script>
+        let number = document.getElementById('numberInput');
+        let ketQua = document.getElementById('result');
+
+        function binhPhuong() {
+            let num = Number(number.value);
+            let result = num * num;
+
+            ketQua.innerText = result;
+        }
+
+    </script>
+
+</body>

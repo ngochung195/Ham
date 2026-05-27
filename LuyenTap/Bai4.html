@@ -1,0 +1,37 @@
+<body>
+
+    <h2>Kiểm Tra Ký Tự Số</h2>
+
+    <label for="charInput">Nhập một ký tự:</label>
+    <input type="text" id="charInput" placeholder="Nhập 1 ký tự..." maxlength="1">
+    <button onclick="kiemTra()">Kiểm tra</button>
+
+    <hr>
+
+    <p><strong>Kết quả:</strong> <span id="result">Chưa có dữ liệu</span></p>
+
+    <script>
+        function laKyTuSo(ch) {
+            return ch >= '0' && ch <= '9';
+        }
+
+        function kiemTra() {
+            let input = document.getElementById('charInput').value;
+            let ketQua = document.getElementById('result');
+
+            if (input === "") {
+                alert("Vui lòng nhập một ký tự!");
+                return;
+            }
+
+            let check = laKyTuSo(input);
+
+            if (check) {
+                ketQua.innerHTML = `<span style="color: green;">true</span> (Ký tự '${input}' là ký tự số)`;
+            } else {
+                ketQua.innerHTML = `<span style="color: red;">false</span> (Ký tự '${input}' KHÔNG phải là ký tự số)`;
+            }
+        }
+    </script>
+
+</body>

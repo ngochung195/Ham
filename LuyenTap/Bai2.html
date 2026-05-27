@@ -1,0 +1,35 @@
+<body>
+
+    <h2>Tính Diện Tích và Chu Vi Hình Tròn</h2>
+
+    <label for="radiusInput">Nhập bán kính (r):</label>
+    <input type="number" id="radiusInput" placeholder="Nhập bán kính..." min="0" step="any">
+    <button onclick="tinhHinhTron()">Tính</button>
+
+    <hr>
+
+    <p><strong>Chu vi:</strong> <span id="chuViResult">Chưa có dữ liệu</span></p>
+    <p><strong>Diện tích:</strong> <span id="dienTichResult">Chưa có dữ liệu</span></p>
+
+    <script>
+        let radiusInput = document.getElementById('radiusInput');
+        let chuViResult = document.getElementById('chuViResult');
+        let dienTichResult = document.getElementById('dienTichResult');
+
+        function tinhHinhTron() {
+            let r = Number(radiusInput.value);
+
+            if (radiusInput.value === "" || r < 0) {
+                alert("Vui lòng nhập một bán kính hợp lệ (lớn hơn hoặc bằng 0)!");
+                return;
+            }
+
+            let chuVi = 2 * Math.PI * r;
+            let dienTich = Math.PI * r * r;
+
+            chuViResult.innerText = chuVi.toFixed(2);
+            dienTichResult.innerText = dienTich.toFixed(2);
+        }
+    </script>
+
+</body>

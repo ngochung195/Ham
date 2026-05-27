@@ -1,0 +1,55 @@
+<body>
+
+    <h2>Kiểm Tra Ký Tự Trong Mảng</h2>
+
+    <label for="arrayInput">Nhập mảng ký tự (nhập liền nhau):</label>
+    <input type="text" id="arrayInput" placeholder="Ví dụ: aabbcde"><br><br>
+
+    <label for="charInput">Nhập ký tự cần tìm:</label>
+    <input type="text" id="charInput" placeholder="Ví dụ: a" maxlength="1"><br><br>
+
+    <button onclick="xuLyKiemTra()">Kiểm tra</button>
+
+    <hr>
+
+    <p><strong>Kết quả:</strong> <span id="result">Chưa có dữ liệu</span></p>
+
+    <script>
+        let arrayInput = document.getElementById('arrayInput');
+        let charInput = document.getElementById('charInput');
+        let ketQua = document.getElementById('result');
+
+        function demKyTu(arr, ch) {
+            let count = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === ch) {
+                    count++;
+                }
+            }
+
+            return count > 0 ? count : -1;
+        }
+
+        function xuLyKiemTra() {
+            let text = arrayInput.value;
+            let ch = charInput.value;
+
+            if (text === "" || ch === "") {
+                alert("Vui lòng nhập đầy đủ mảng ký tự và ký tự cần tìm!");
+                return;
+            }
+
+            let mangKyTu = text.split('');
+
+            let result = demKyTu(mangKyTu, ch);
+
+            if (result !== -1) {
+                ketQua.innerHTML = `<span style="color: green; font-weight: bold;">${result}</span> (Ký tự '${ch}' xuất hiện ${result} lần)`;
+            } else {
+                ketQua.innerHTML = `<span style="color: red; font-weight: bold;">-1</span> (Ký tự '${ch}' không nằm trong mảng)`;
+            }
+        }
+    </script>
+
+</body>
