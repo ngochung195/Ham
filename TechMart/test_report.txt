@@ -1,0 +1,27 @@
+techmart_refactored.js:40 --- HÓA ĐƠN TECHMART ---
+techmart_refactored.js:41 Tạm tính: 15600000 VNĐ
+techmart_refactored.js:42 Giảm giá: 3120000 VNĐ
+techmart_refactored.js:43 Thuế VAT: 1248000 VNĐ
+techmart_refactored.js:44 TỔNG THANH TOÁN: 13728000 VNĐ
+techmart_refactored.js:45 ------------------------
+techmart_refactored.js:69 === TEST CASE 1: GIỎ HÀNG TRỐNG ===
+techmart_refactored.js:40 --- HÓA ĐƠN TECHMART ---
+techmart_refactored.js:41 Tạm tính: 0 VNĐ
+techmart_refactored.js:42 Giảm giá: 0 VNĐ
+techmart_refactored.js:43 Thuế VAT: 0 VNĐ
+techmart_refactored.js:44 TỔNG THANH TOÁN: 0 VNĐ
+techmart_refactored.js:45 ------------------------
+techmart_refactored.js:75 === TEST CASE 2: GIỎ MUA NHIỀU SẢN PHẨM (Khách MEMBER) ===
+techmart_refactored.js:40 --- HÓA ĐƠN TECHMART ---
+techmart_refactored.js:41 Tạm tính: 11900000 VNĐ
+techmart_refactored.js:42 Giảm giá: 1190000 VNĐ
+techmart_refactored.js:43 Thuế VAT: 1071000 VNĐ
+techmart_refactored.js:44 TỔNG THANH TOÁN: 11781000 VNĐ
+techmart_refactored.js:45 ------------------------
+techmart_refactored.js:85 === TEST CASE 3: ĐỔI THUẾ VAT XUỐNG 8% (Khách VIP) ===
+techmart_refactored.js:40 --- HÓA ĐƠN TECHMART ---
+techmart_refactored.js:41 Tạm tính: 15600000 VNĐ
+techmart_refactored.js:42 Giảm giá: 3120000 VNĐ
+techmart_refactored.js:43 Thuế VAT: 998400 VNĐ
+techmart_refactored.js:44 TỔNG THANH TOÁN: 13478400 VNĐ
+techmart_refactored.js:45 ------------------------
