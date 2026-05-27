@@ -1,0 +1,42 @@
+order_refactored.js:42 --- Bắt đầu xử lý đơn hàng ---
+order_refactored.js:32 [DB] Đã lưu đơn hàng 860 vào CSDL.
+order_refactored.js:37 [EMAIL] Đang gửi biên lai tới khachhang@gmail.com...
+order_refactored.js:38 [EMAIL] Nội dung: Tổng tiền của bạn là 396000 VND.
+order_refactored.js:62 Object
+order_refactored.js:113 ========== BẮT ĐẦU KIỂM THỬ ==========
+
+order_refactored.js:117 [Chạy] Test Case 1: Đơn hàng hợp lệ (Happy Path)
+order_refactored.js:42 --- Bắt đầu xử lý đơn hàng ---
+order_refactored.js:32 [DB] Đã lưu đơn hàng 534 vào CSDL.
+order_refactored.js:37 [EMAIL] Đang gửi biên lai tới khachhang@gmail.com...
+order_refactored.js:38 [EMAIL] Nội dung: Tổng tiền của bạn là 396000 VND.
+order_refactored.js:120  -> Kết quả mong muốn : {"status":"SUCCESS","total":396000}
+order_refactored.js:121  -> Kết quả thực tế   : {"status":"SUCCESS","orderId":534,"total":396000}
+order_refactored.js:134  ✅ KẾT QUẢ: PASSED
+
+order_refactored.js:117 [Chạy] Test Case 2: Đơn hàng rỗng (Mảng items rỗng)
+order_refactored.js:42 --- Bắt đầu xử lý đơn hàng ---
+order_refactored.js:120  -> Kết quả mong muốn : {"status":"FAILED","message":"Đơn hàng rỗng!"}
+order_refactored.js:121  -> Kết quả thực tế   : {"status":"FAILED","message":"Đơn hàng rỗng!"}
+order_refactored.js:134  ✅ KẾT QUẢ: PASSED
+
+order_refactored.js:117 [Chạy] Test Case 3: Không truyền thuộc tính items
+order_refactored.js:42 --- Bắt đầu xử lý đơn hàng ---
+order_refactored.js:120  -> Kết quả mong muốn : {"status":"FAILED","message":"Đơn hàng rỗng!"}
+order_refactored.js:121  -> Kết quả thực tế   : {"status":"FAILED","message":"Đơn hàng rỗng!"}
+order_refactored.js:134  ✅ KẾT QUẢ: PASSED
+
+order_refactored.js:117 [Chạy] Test Case 4: Email không hợp lệ (Thiếu @)
+order_refactored.js:42 --- Bắt đầu xử lý đơn hàng ---
+order_refactored.js:120  -> Kết quả mong muốn : {"status":"FAILED","message":"Email không hợp lệ!"}
+order_refactored.js:121  -> Kết quả thực tế   : {"status":"FAILED","message":"Email không hợp lệ!"}
+order_refactored.js:134  ✅ KẾT QUẢ: PASSED
+
+order_refactored.js:117 [Chạy] Test Case 5: Không truyền thuộc tính email
+order_refactored.js:42 --- Bắt đầu xử lý đơn hàng ---
+order_refactored.js:120  -> Kết quả mong muốn : {"status":"FAILED","message":"Email không hợp lệ!"}
+order_refactored.js:121  -> Kết quả thực tế   : {"status":"FAILED","message":"Email không hợp lệ!"}
+order_refactored.js:134  ✅ KẾT QUẢ: PASSED
+
+order_refactored.js:141 ========== KẾT QUẢ CHUNG: ĐẠT 5/5 TEST CASES ==========
+index.html:31 Live reload enabled.
