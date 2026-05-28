@@ -31,17 +31,26 @@
         let feetResult = document.getElementById('feetResult');
 
         function footToMeter() {
+            if (foot.value.trim() === "") {
+                metersResult.innerText = "Vui lòng nhập một số hợp lệ!";
+                return;
+            }
             let num = Number(foot.value);
             let result = num * 0.305;
 
-            metersResult.innerText = result + " meters";
+            metersResult.innerText = result.toFixed(2) + " meters";
         }
 
         function meterToFoot() {
+            if (meters.value.trim() === "") {
+                feetResult.innerText = "Vui lòng nhập một số hợp lệ!";
+                return;
+            }
+
             let num = Number(meters.value);
             let result = num * 3.279;
 
-            feetResult.innerText = result + " feet";
+            feetResult.innerText = result.toFixed(2) + " feet";
         }
     </script>
 
